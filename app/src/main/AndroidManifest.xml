@@ -2,20 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.proyectofincurso">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Ajustes"></activity>
+        <activity android:name=".EditarMascota" />
+        <activity
+            android:name=".MiMenu"
+            android:label="@string/title_activity_mi_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddMascota"
+            android:parentActivityName=".MiMenu" />
+        <activity android:name=".Registro_Y_Logueo.SignUp" />
+        <activity android:name=".MiPerfil" />
+        <activity android:name=".PrincipalUsuario" />
+        <activity android:name=".Registro_Y_Logueo.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DetalleMascota"
+            android:parentActivityName=".MiMenu" />
     </application>
 
 </manifest>

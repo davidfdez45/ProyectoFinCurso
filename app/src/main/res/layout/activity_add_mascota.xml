@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Nueva publicacion"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/addRol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/idAnimalPerdido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal perdido" />
+
+            <RadioButton
+                android:id="@+id/idAnimalEncontrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal encontrado" />
+
+            <RadioButton
+                android:id="@+id/idAnimalEnAdopcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal en adopcion" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/addTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Introduce titulo"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imagen:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/addImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Introduce ruta imagen"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animal:"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/addTipo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/Tipo"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raza:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/addRaza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Introduce raza"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/addSexo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/Sexo"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/addDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Introduce descripcion"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad:"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/addCiudad"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/Ciudades"/>
+
+        <Button
+            android:id="@+id/publicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttondesign"
+            android:text="Publicar" />
+
+    </LinearLayout>
+</ScrollView>
